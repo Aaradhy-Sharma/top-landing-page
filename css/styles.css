@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("/Assets/raiden_background.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: rgb(114, 9, 213);
+}
+
+.header_icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.siteHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(215, 190, 221);
+    opacity: 80%;
+    padding: 1px;
+    margin: 8px auto;
+    border: 2px solid purple;
+    border-radius: 60px;
+}
+
+.siteHeader:hover{
+    background-color: rgb(186, 156, 193);
+    opacity: 80%;
+    border: 2px solid rgb(215, 190, 221);
+    box-shadow: 0 0 5px rgb(215, 190, 221);
+}
+
+.nav_links{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px auto;
+ 
+}
+
+.nav_links li{
+    list-style: none;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.navLink{
+    text-decoration: none;
+    color:rgb(114, 9, 213)
+}
+
+.navLink:hover{
+    text-decoration: underline;
+    color:blueviolet;
+    font-weight: 200;
+
+}
+
+.navLinkDivider{
+    color: rgb(30, 27, 32);
+    font-weight: 200;
+}
+
+.navLinkDivider:hover{
+    text-decoration: none;
+    color: rgb(30, 27, 32);
+    font-size: larger;
+}
+
+.headerTitle{
+    margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+    .siteHeader {
+      flex-wrap: wrap;
+    }
+  
+    .nav_links {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .nav_links li {
+      margin: 5px;
+    }
+  }
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 190, 221);
+    opacity: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid purple;
+    border-radius: 15px;
+    width: 300px;
+    height: 320px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px auto;
+    object-fit: cover;
+
+}
+
+.cardHeader{
+    color:rgb(66, 38, 94)
+}
+
+.cardText{
+    color:rgb(128, 60, 197);
+    text-align: center;
+    font-size: 12px;
+}
+
+.cardLink{
+    display: flex;
+    margin-top: 10px;
+    text-decoration: none;
+    color:rgb(67, 8, 122);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card:hover{
+    background-color: rgb(186, 156, 193);
+    opacity: 80%;
+    color: rgb(215, 190, 221);
+    border: 2px solid rgb(215, 190, 221);
+    box-shadow: 0 0 10px rgb(215, 190, 221);
+}
+
+.card:hover .cardText{
+    color: rgb(125, 50, 143);
+}
+
+.card:hover .cardHeader{
+    color: rgb(125, 50, 143);
+}
+
+.card:hover img{
+    border: 2px solid rgb(125, 50, 143);
+}
+
+.cardLink:hover{
+    color: rgb(125, 50, 143);
+    text-decoration: underline;
+}
+
+.bodySecondElement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 300px 10px 200px 10px;
+    color:aliceblue;
+}
+
+.quote{
+    font-family: 'Pacifico', cursive;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.quote:hover{
+    font-size: 45px;
+    text-shadow: 0 0 30px rgb(215, 190, 221);
+}
+
+.quoteAuthor{
+    font-style: italic;
+    font-size: 20px;
+}
+
+.bodyThirdElement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px 10px;
+    border: 2px solid rgb(215, 190, 221);
+    border-radius: 15px;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  
+  .aboutEiText {
+    opacity: 1;
+    color: rgb(199, 185, 208);
+  }
+
+  .bodyThirdElement:hover{
+    opacity: 0.8;
+    background-color: rgb(199, 185, 208);
+  }
+  
+  .bodyThirdElement:hover .aboutEiText {
+    opacity: 0.8;
+    background-color: rgb(199, 185, 208);
+    color: black;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    border: 2px solid rgb(215, 190, 221);
+    border-radius: 15px;
+    background-color: rgba(240, 248, 255, 0.687);
+  }
+  
