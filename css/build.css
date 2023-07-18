@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("/Assets/raiden_background1.jpeg");
+    background-image: url("../Assets/raiden_background1.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
